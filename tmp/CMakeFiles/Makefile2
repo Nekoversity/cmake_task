@@ -60,39 +60,76 @@ CMAKE_SOURCE_DIR = /mnt/d/dev/cpp/uni/cmake_task/src
 CMAKE_BINARY_DIR = /mnt/d/dev/cpp/uni/cmake_task/tmp
 
 #=============================================================================
-# Target rules for target CMakeFiles/cmake_task.dir
+# Target rules for target CMakeFiles/kat.dir
 
 # All Build rule for target.
-CMakeFiles/cmake_task.dir/all:
-	$(MAKE) -f CMakeFiles/cmake_task.dir/build.make CMakeFiles/cmake_task.dir/depend
-	$(MAKE) -f CMakeFiles/cmake_task.dir/build.make CMakeFiles/cmake_task.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/d/dev/cpp/uni/cmake_task/tmp/CMakeFiles --progress-num=1,2 "Built target cmake_task"
-.PHONY : CMakeFiles/cmake_task.dir/all
+CMakeFiles/kat.dir/all:
+	$(MAKE) -f CMakeFiles/kat.dir/build.make CMakeFiles/kat.dir/depend
+	$(MAKE) -f CMakeFiles/kat.dir/build.make CMakeFiles/kat.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/d/dev/cpp/uni/cmake_task/tmp/CMakeFiles --progress-num=1,2 "Built target kat"
+.PHONY : CMakeFiles/kat.dir/all
 
 # Include target in all.
-all: CMakeFiles/cmake_task.dir/all
+all: CMakeFiles/kat.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/cmake_task.dir/rule: cmake_check_build_system
+CMakeFiles/kat.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/dev/cpp/uni/cmake_task/tmp/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/cmake_task.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/kat.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/dev/cpp/uni/cmake_task/tmp/CMakeFiles 0
-.PHONY : CMakeFiles/cmake_task.dir/rule
+.PHONY : CMakeFiles/kat.dir/rule
 
 # Convenience name for target.
-cmake_task: CMakeFiles/cmake_task.dir/rule
+kat: CMakeFiles/kat.dir/rule
 
-.PHONY : cmake_task
-
-# clean rule for target.
-CMakeFiles/cmake_task.dir/clean:
-	$(MAKE) -f CMakeFiles/cmake_task.dir/build.make CMakeFiles/cmake_task.dir/clean
-.PHONY : CMakeFiles/cmake_task.dir/clean
+.PHONY : kat
 
 # clean rule for target.
-clean: CMakeFiles/cmake_task.dir/clean
+CMakeFiles/kat.dir/clean:
+	$(MAKE) -f CMakeFiles/kat.dir/build.make CMakeFiles/kat.dir/clean
+.PHONY : CMakeFiles/kat.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/kat.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/main.dir
+
+# All Build rule for target.
+CMakeFiles/main.dir/all: CMakeFiles/kat.dir/all
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/d/dev/cpp/uni/cmake_task/tmp/CMakeFiles --progress-num=3,4 "Built target main"
+.PHONY : CMakeFiles/main.dir/all
+
+# Include target in all.
+all: CMakeFiles/main.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/dev/cpp/uni/cmake_task/tmp/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/dev/cpp/uni/cmake_task/tmp/CMakeFiles 0
+.PHONY : CMakeFiles/main.dir/rule
+
+# Convenience name for target.
+main: CMakeFiles/main.dir/rule
+
+.PHONY : main
+
+# clean rule for target.
+CMakeFiles/main.dir/clean:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/clean
+.PHONY : CMakeFiles/main.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/main.dir/clean
 
 .PHONY : clean
 

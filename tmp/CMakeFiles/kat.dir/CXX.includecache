@@ -6,9 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/mnt/d/dev/cpp/uni/cmake_task/src/kat.h
-
-/mnt/d/dev/cpp/uni/cmake_task/src/main.cpp
-kat.h
-/mnt/d/dev/cpp/uni/cmake_task/src/kat.h
+/mnt/d/dev/cpp/uni/cmake_task/src/kat.cpp
+iostream
+/mnt/d/dev/cpp/uni/cmake_task/src/iostream
 

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libkat.a  CMakeFiles/kat.dir/kat.cpp.o
+/usr/bin/ranlib libkat.a

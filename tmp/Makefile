@@ -111,17 +111,57 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named cmake_task
+# Target rules for targets named kat
 
 # Build rule for target.
-cmake_task: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 cmake_task
-.PHONY : cmake_task
+kat: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 kat
+.PHONY : kat
 
 # fast build rule for target.
-cmake_task/fast:
-	$(MAKE) -f CMakeFiles/cmake_task.dir/build.make CMakeFiles/cmake_task.dir/build
-.PHONY : cmake_task/fast
+kat/fast:
+	$(MAKE) -f CMakeFiles/kat.dir/build.make CMakeFiles/kat.dir/build
+.PHONY : kat/fast
+
+#=============================================================================
+# Target rules for targets named main
+
+# Build rule for target.
+main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main
+.PHONY : main
+
+# fast build rule for target.
+main/fast:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
+
+kat.o: kat.cpp.o
+
+.PHONY : kat.o
+
+# target to build an object file
+kat.cpp.o:
+	$(MAKE) -f CMakeFiles/kat.dir/build.make CMakeFiles/kat.dir/kat.cpp.o
+.PHONY : kat.cpp.o
+
+kat.i: kat.cpp.i
+
+.PHONY : kat.i
+
+# target to preprocess a source file
+kat.cpp.i:
+	$(MAKE) -f CMakeFiles/kat.dir/build.make CMakeFiles/kat.dir/kat.cpp.i
+.PHONY : kat.cpp.i
+
+kat.s: kat.cpp.s
+
+.PHONY : kat.s
+
+# target to generate assembly for a file
+kat.cpp.s:
+	$(MAKE) -f CMakeFiles/kat.dir/build.make CMakeFiles/kat.dir/kat.cpp.s
+.PHONY : kat.cpp.s
 
 main.o: main.cpp.o
 
@@ -129,7 +169,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/cmake_task.dir/build.make CMakeFiles/cmake_task.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -138,7 +178,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/cmake_task.dir/build.make CMakeFiles/cmake_task.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -147,7 +187,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/cmake_task.dir/build.make CMakeFiles/cmake_task.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -157,8 +197,12 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... cmake_task"
 	@echo "... edit_cache"
+	@echo "... kat"
+	@echo "... main"
+	@echo "... kat.o"
+	@echo "... kat.i"
+	@echo "... kat.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

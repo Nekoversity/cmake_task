@@ -1,6 +1,6 @@
-#include <iostream>
+#include "kat.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    greet();
     return 0;
 }

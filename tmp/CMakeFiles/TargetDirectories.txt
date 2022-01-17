@@ -1,3 +1,4 @@
 /mnt/d/dev/cpp/uni/cmake_task/tmp/CMakeFiles/rebuild_cache.dir
-/mnt/d/dev/cpp/uni/cmake_task/tmp/CMakeFiles/cmake_task.dir
 /mnt/d/dev/cpp/uni/cmake_task/tmp/CMakeFiles/edit_cache.dir
+/mnt/d/dev/cpp/uni/cmake_task/tmp/CMakeFiles/kat.dir
+/mnt/d/dev/cpp/uni/cmake_task/tmp/CMakeFiles/main.dir
